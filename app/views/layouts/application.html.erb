@@ -8,9 +8,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
 
   <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid d-flex justify-content-between">
+    <a class="navbar-brand" href="#">Wikinimous</a>
+    <%= link_to "New article", new_article_path, class:"navbar-brand" %>
+  </div>
+</nav>
+  </div>
+  <div class="container w-5">
     <%= yield %>
+  </div>
   </body>
 </html>
